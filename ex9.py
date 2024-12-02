@@ -26,7 +26,7 @@ def calcular_custo(y, y_hat):
     custo = (y_hat - y) ** 2 
     return np.sum(custo) / (qtd_pontos * 2)
 
-for w n range(0, 10, 0.1):
+for w in range(0, 10, 0.1):
     b = -1
     w = 0.7
     y_hat = equacao_linear(x, w, b)
